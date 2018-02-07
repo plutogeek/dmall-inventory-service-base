@@ -24,6 +24,14 @@ pipeline {
                 sh 'echo "building..."'
                 sh 'echo "clean..."'
             }
+	}
+	stage('Deploy'){
+	    steps{
+		sh './genImages.sh'
+
+	}
+
+
         }
     }
 }
