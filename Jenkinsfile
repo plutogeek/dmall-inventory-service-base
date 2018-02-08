@@ -1,9 +1,6 @@
 pipeline {
     agent any
     
-    triggers {
-        pollSCM('* * * * *')
-    }
     stages {
         stage('repo clean up'){
             steps {
@@ -13,16 +10,13 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git poll: true, url: 'https://github.com/plutogeek/dmall-inventory-service-base.git', branch: 'master'
+                git poll: true, url: 'https://github.com/lijian/dmall-inventory-service-base.git', branch: 'master'
             }
-                
+
         }
 
         stage('Build') {
             steps{
-	        sh './gradlew sonarqube'
-                sh 'echo "building..."'
-                sh 'echo "clean..."'
                 sh './gradlew clean build'
             }
         }
@@ -39,14 +33,6 @@ pipeline {
                     sh './deployToDEV.sh'
                 }
             }
-	}
-	stage('Deploy'){
-	    steps{
-		sh './genImages.sh'
-
-	}
-
-
         }
     }
 }
