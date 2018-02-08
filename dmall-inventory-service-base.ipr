@@ -18,6 +18,14 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      </GradleProjectSettings>
+    </option>
+  </component>
   <component name="GradleUISettings">
     <setting name="root" />
   </component>
@@ -50,7 +58,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module filepath="$PROJECT_DIR$/dmall-inventory-service-base.iml" fileurl="file://$PROJECT_DIR$/dmall-inventory-service-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dmall-inventory-service-base.iml" filepath="$PROJECT_DIR$/dmall-inventory-service-base.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
