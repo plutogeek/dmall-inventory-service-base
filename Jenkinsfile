@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git poll: true, url: 'https://github.com/lijian/dmall-inventory-service-base.git', branch: 'master'
+                git poll: true, url: 'https://github.com/plutogeek/dmall-inventory-service-base.git', branch: 'master'
             }
 
         }
